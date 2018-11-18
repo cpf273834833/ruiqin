@@ -1,14 +1,12 @@
 package com.fly.rq_user_service.controller;
 
 import com.fly.rq_user_service.entity.AdminUser;
-import com.fly.rq_user_service.mapper.AdminUserMapper;
 import com.fly.rq_user_service.service.AdminUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Date;
 import java.util.List;
 
 /**

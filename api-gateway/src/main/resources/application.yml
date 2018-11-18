@@ -1,0 +1,24 @@
+server:
+  port: 9000
+
+  #服务名称
+spring:
+  application:
+    name: api-gateway
+
+## 服务端eureka 地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+#自定义访问路径规则
+# http://localhost:9000/rq-user-server/api/v1/adminUser/findAll
+#http://localhost:9000/ruiqin/api/v1/adminUser/findAll
+zuul:
+  routes:
+    rq-user-server: /ruiqin/**
+  ignored-patterns: /*-server/**
+  #忽略整个服务不对外提供接口
+#  ignored-services: rq-user-server

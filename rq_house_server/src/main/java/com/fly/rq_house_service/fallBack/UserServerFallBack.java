@@ -7,6 +7,7 @@ import java.util.Map;
 
 /**
  * Created by Administrator on 2018/11/18 0018.
+ * 用户服务接口调用 失败回调方法  failback
  */
 @Component
 public class UserServerFallBack implements UserServer {
