@@ -15,9 +15,14 @@ spring:
   #整合redis  孩子  你本地安装了redis了吗？ 没有就注释了吧
   redis:
     database: 0
-    host: localhost
+    host: 119.29.19.65
     port: 6379
     timeout: 2000
+    password: cpf553457177
+    jedis:
+      pool:
+        max-idle: 200
+        min-idle: 200
 
 
 
